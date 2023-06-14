@@ -8,15 +8,20 @@
     border-radius: 5px;
     border: none;
     color: #fff;
-    background-color: #4CAF50;
+    background-color: #20e2e9;
     cursor: pointer;
     margin: 5px;
 }
 
 .btn:hover {
-    background-color: #45a049;
+    background-color: #05767a;
 }
 
 .btn:active {
-    background-color: #3e8e41;
+    background-color: #3f5ce0;
+
+}
+a {
+    text-decoration: none;
+    color: white
 }
