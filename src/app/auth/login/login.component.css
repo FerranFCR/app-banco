@@ -1,7 +1,4 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Noto Serif';
-}
+
 
 a {
     text-decoration: none;
@@ -23,16 +20,18 @@ a {
     color: rgba(0, 255, 13, 0.767);
 }
 
-.user {
+.email {
     display: flex;
     justify-content: left;
     margin: 10px;
+    color: white;
 }
 
 .pass {
     display: flex;
     justify-content: left;
     margin: 10px;
+    color: white
 }
 
 .credential-buttons {
@@ -62,12 +61,4 @@ a {
 
 .btn:active {
     background-color: #3f5ce0;
-}
-
-.user {
-    color: white
-}
-
-.pass {
-    color: white
 }
