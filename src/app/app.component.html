@@ -2,17 +2,31 @@
 <h2 class="nombre-banco">Goliath National Bank</h2>
 <nav class="quick-menu">
     <ul>
-        <li class="li-quick-menu"><a href="/auth/login">Iniciar sesion</a>
-        <li class="li-quick-menu"><a href="/pages/dashboard">Inicio</a>
-        <li class="li-quick-menu"><a href="/pages/nueva-transferencia">Nueva Transferencia</a>
-        <li class="li-quick-menu"><a href="/pages/mi-cuenta">Mi cuenta</a>
+        <li class="li-quick-menu"><a routerLinkActive="active-menu" routerLink="/auth/login">Iniciar sesion</a>
+        <li class="li-quick-menu"><a routerLinkActive="active-menu" routerLink="/pages/dashboard">Inicio</a>
+        <li class="dropdown-menu">
+            Transferencias
+            <ul class="submenu">
+                <li>
+                    <a routerLinkActive="active-menu" routerLink="/pages/transferencias-enviadas">Transferencias
+                        Enviadas</a>
+                </li>
+                <li>
+                    <a routerLinkActive="active-menu" routerLink="/pages/transferencias-recibidas">Transferencias
+                        Recibidas
+                    </a>
+                </li>
+                <li>
+                    <a routerLinkActive="active-menu" routerLink="/pages/nueva-transferencia">Nueva Transferencia</a>
+                </li>
+            </ul>
+        </li>
+        <li class="li-quick-menu"><a routerLinkActive="active-menu" routerLink="/pages/mi-cuenta">Mi cuenta</a>
     </ul>
 </nav>
 <footer class="exit">
     <button type="submit" class="btn-absolute" routerLink="/auth/login">Salir</button>
 </footer>
-
-
 
 
 <router-outlet></router-outlet>

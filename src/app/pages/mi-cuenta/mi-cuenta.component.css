@@ -1,57 +1,65 @@
-
-.h2{
+.h2 {
     text-align: center;
 }
-.datos{
-  display: flex;
-  justify-content: space-evenly;
-  gap: 20px auto;
-  
+
+.datos {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px auto;
+
 }
-.saldo{
+
+.saldo {
     text-align: left;
     padding: 10px;
 }
-.gestor{
+
+.gestor {
     text-align: center;
     border: solid 2px blue;
     padding: 10px;
 }
-.text-red{
+
+.text-red {
     color: red;
     border: solid 2px red
 }
-.text-green{
+
+.text-green {
     color: rgb(63, 194, 63);
     border: solid 2px green
 }
-.cambiarContraseña{
+
+.cambiarContraseña {
     border: solid 2px rgb(255, 145, 0);
     padding: 10px;
+    
 }
-.boton{
+
+.boton {
     color: white;
     background-color: black;
     text-align: left;
 }
+
 @media screen and (max-width: 768px) {
     .datos {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-    
+
     .saldo,
     .gestor,
     .cambiarContraseña {
         width: 90%;
         text-align: center;
     }
-    
+
     .cambiarContraseña input {
         width: 100%;
     }
-    
+
     .boton {
         width: 100%;
         text-align: center;
