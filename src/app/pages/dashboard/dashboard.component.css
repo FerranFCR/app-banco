@@ -29,3 +29,15 @@ div {
     border: solid 4px red;
     background-color: rgb(235, 80, 80);
 }
+@media screen and (max-width: 768px) {
+    div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recibidas,
+    .enviadas {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}

@@ -50,3 +50,21 @@ img{
     right: 100px;
 }
 
+@media screen and (max-width: 768px) {
+    .quick-menu {
+        width: 90%;
+        margin-bottom: 10%;
+    }
+    
+    .li-quick-menu {
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .btn-absolute {
+        bottom: 10px;
+        right: 10px;
+    }
+}

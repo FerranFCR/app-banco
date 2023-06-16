@@ -33,3 +33,19 @@
     background-color: red;
     cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+    .informacion {
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .informacion input {
+        width: 100%;
+    }
+    
+    .btn-confirmar,
+    .btn-reset {
+        width: 100%;
+    }
+}
