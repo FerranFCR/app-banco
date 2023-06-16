@@ -7,10 +7,11 @@ import { FormsModule } from '@angular/forms';
 import { TransferenciasRecibidasComponent } from './transferencias-recibidas/transferencias-recibidas.component';
 import { TransferenciasEnviadasComponent } from './transferencias-enviadas/transferencias-enviadas.component';
 import { ComponentesModule } from '../componentes/componentes.module';
+import { NuevaTransferenciaComponent } from './nueva-transferencia/nueva-transferencia.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, TransferenciasRecibidasComponent, TransferenciasEnviadasComponent],
+  declarations: [DashboardComponent, TransferenciasRecibidasComponent, TransferenciasEnviadasComponent, NuevaTransferenciaComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,
