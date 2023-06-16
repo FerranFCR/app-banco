@@ -4,13 +4,14 @@
 div {
     display: flex;
     margin: auto;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .recibidas{
     border: solid 4px black;
     cursor: pointer;
     padding:  20px;
+    border-radius: 8%;
     
 }
 .recibidas:hover{
@@ -22,7 +23,7 @@ div {
     border: solid 4px black;
     cursor: pointer;
     padding:  20px;
-    
+    border-radius: 8%;    
 }
 .enviadas:hover{
     cursor: pointer;
