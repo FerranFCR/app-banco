@@ -1,6 +1,6 @@
 .fila-tabla{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .fila-tabla > div {
     width: 25%;

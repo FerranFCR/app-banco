@@ -8,4 +8,8 @@ import { transferenciasRecibidas } from 'src/app/datos/transferencias-ejemplos';
 export class TransferenciasRecibidasComponent {
 
  transferencias: any= transferenciasRecibidas
+ configTabla: any = {
+  origen: true,
+  destino: false,
+ }
 }

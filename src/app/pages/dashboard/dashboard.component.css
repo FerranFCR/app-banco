@@ -1,49 +1,31 @@
-*{
+* {
     box-sizing: border-box;
 }
-.btn {
-    display: inline-block;
-    padding: 5px 10px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
-    background-color: #20e2e9;
+div {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.recibidas{
+    border: solid 4px black;
     cursor: pointer;
-    margin: 5px;
+    padding:  20px;
+    
 }
-
-.btn:hover {
-    background-color: #05767a;
+.recibidas:hover{
+    cursor: pointer;
+    border: solid 4px green;
+    background-color: rgb(4, 206, 4);
 }
-
-.btn:active {
-    background-color: #3f5ce0;
+.enviadas {
+    border: solid 4px black;
+    cursor: pointer;
+    padding:  20px;
+    
 }
-
-a {
-    text-decoration: none;
-}
-
-
-.income{
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 10%;
-    color: black;
-    border: 2px solid black;
-    border-radius: 5%;
-    background-color: rgb(99, 97, 97);
-}
-.expenses{
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 10%;
-    color: black;
-    border: 2px solid black;
-    border-radius: 5%;
-    background-color: rgb(99, 97, 97);
+.enviadas:hover{
+    cursor: pointer;
+    border: solid 4px red;
+    background-color: rgb(235, 80, 80);
 }

@@ -8,4 +8,8 @@ import { Component, Input } from '@angular/core';
 export class TablaTransferenciasComponent {
 
 @Input() transferencias: any[] = [];
+@Input() config:any = {
+  origen: true,
+  destino: true,
+}
 }

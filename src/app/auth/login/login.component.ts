@@ -24,6 +24,7 @@ constructor(private clienteService: ClienteService, private router: Router){}
     } 
     else{
       console.log("Usuário inexistente");
+      
     }
   }
 

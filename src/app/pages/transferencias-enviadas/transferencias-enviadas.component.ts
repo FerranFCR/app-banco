@@ -9,4 +9,9 @@ import {transferenciasEnviadas} from 'src/app/datos/transferencias-ejemplos';
 export class TransferenciasEnviadasComponent {
 
   transferencias: any= transferenciasEnviadas;
+  configTabla: any = {
+    origen: false,
+    destino: true,
+  }
+
 }

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class NuevaTransferenciaComponent {
 
+  Beneficiario: number | null = null;
+  Importe: number = 0;
+  Concepto: String = "";
+
 }

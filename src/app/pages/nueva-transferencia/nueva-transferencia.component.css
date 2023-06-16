@@ -1,0 +1,35 @@
+.informacion {
+    width: 40%;
+    margin: 0 auto;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5%;
+    background-color: rgb(83, 135, 247);
+    list-style: none;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.informacion label {
+    display: block;
+    text-align: left;
+}
+
+.informacion input {
+    display: block;
+    text-align: left;
+    width: 50%;
+}
+
+.btn-confirmar {
+    color: black;
+    background-color: rgb(38, 235, 38);
+    cursor: pointer;
+}
+.btn-reset{
+    color: black;
+    background-color: red;
+    cursor: pointer;
+}

@@ -1,9 +1,13 @@
 <div class="fila-tabla cabecera-tabla">
-    <div>Concepto</div>
+    <div *ngIf ="config.origen">Origen</div>
+    <div *ngIf ="config.destino">Destio</div>
     <div>Importe</div>
+    <div>Concepto</div>
     <div>Fecha</div>
 </div>
 <article class="fila-tabla" *ngFor="let transferencia of transferencias">
+    <div *ngIf ="config.origen">{{transferencia.idOrdenante}}</div>
+    <div *ngIf ="config.destino">{{transferencia.idBeneficiario}}</div>
     <div>{{transferencia.concepto}}</div>
     <div>{{transferencia.importe | currency:'EUR'}}</div>
     <div>{{transferencia.fecha | date:'short'}}</div>

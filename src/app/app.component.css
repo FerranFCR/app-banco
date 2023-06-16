@@ -38,3 +38,15 @@ img{
 .nombre-banco{
     text-align: center;
 }
+.exit{
+    text-align: right;
+    margin-top: px;    
+}
+.btn-absolute{
+    color:black;
+    background-color: aquamarine;
+    position:absolute;
+    bottom: 50px ;
+    right: 100px;
+}
+
