@@ -1,10 +1,12 @@
+<section *ngIf="cliente">
 <div class="h2">
     <h2>Mi cuenta</h2>
 </div>
 
 <div class="datos">
-    <article [ngClass]="{'text-green': saldo>0, 'text-red': saldo<=0 }" class="saldo">
-        <h2>Saldo:1.232,66€</h2>
+    <article class="saldo">
+        <p>Saldo actual: </p>
+        <p class="dinero">{{cliente.saldo}} €</p>
     </article>
 
     <article class="gestor">
@@ -20,3 +22,5 @@
         <div><button class="boton">Confirmar</button></div>
     </article>
 </div>
+</section>
+<p class="iniciarsesion" *ngIf="!cliente">Inicie Sesión para consultar sus datos</p>

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ClienteService } from 'src/app/services/cliente/cliente.service';
 
 @Component({
   selector: 'app-tabla-transferencias',
@@ -7,9 +8,14 @@ import { Component, Input } from '@angular/core';
 })
 export class TablaTransferenciasComponent {
 
-@Input() transferencias: any[] = [];
-@Input() config:any = {
-  origen: true,
-  destino: true,
+  cliente: any = null;
+
+  constructor(private clienteService: ClienteService) { }
+
+  ngOnInit(): void {
+    this.cliente = this.clienteService.leerSesion();
+  }
+  @Input() transferencias: any[] = [];
+  
 }
-}
+

@@ -33,6 +33,10 @@
     background-color: red;
     cursor: pointer;
 }
+.iniciarsesion{
+    text-align: center;
+    font-weight: bold;
+}
 @media screen and (max-width: 768px) {
     .informacion {
         width: 90%;

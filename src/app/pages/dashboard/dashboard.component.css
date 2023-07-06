@@ -5,14 +5,14 @@ div {
     display: flex;
     margin: auto;
     justify-content: space-evenly;
+    
 }
 
 .recibidas{
     border: solid 4px black;
     cursor: pointer;
-    padding:  20px;
+    padding:  50px;
     border-radius: 8%;
-    
 }
 .recibidas:hover{
     cursor: pointer;
@@ -22,13 +22,24 @@ div {
 .enviadas {
     border: solid 4px black;
     cursor: pointer;
-    padding:  20px;
-    border-radius: 8%;    
+    padding:  50px;
+    border-radius: 8%;
 }
 .enviadas:hover{
     cursor: pointer;
     border: solid 4px red;
     background-color: rgb(235, 80, 80);
+}
+.iniciarsesion{
+    text-align: center;
+    font-weight: bold;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
 }
 @media screen and (max-width: 768px) {
     div {

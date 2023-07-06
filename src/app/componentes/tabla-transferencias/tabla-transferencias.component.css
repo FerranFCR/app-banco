@@ -3,12 +3,17 @@
     justify-content: space-between;
 }
 .fila-tabla > div {
-    width: 25%;
+    width: 10%;
 }
 .cabecera-tabla{
     font-weight: bold;
     text-transform: uppercase;
 }
+.iniciarsesion{
+  text-align: center;
+  font-weight: bold;
+}
+
 
 @media (max-width: 768px) {
     .fila-tabla {

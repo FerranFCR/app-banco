@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TablaTransferenciasComponent } from './tabla-transferencias/tabla-transferencias.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,7 +12,8 @@ import { TablaTransferenciasComponent } from './tabla-transferencias/tabla-trans
   ],
   //cosas que ncesitamos en este modilo
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
   ],
   //cosas declaradas en el modulo que se pueden usar fuera
   exports: [

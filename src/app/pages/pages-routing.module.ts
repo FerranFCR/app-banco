@@ -5,6 +5,7 @@ import { TransferenciasRecibidasComponent } from './transferencias-recibidas/tra
 import { TransferenciasEnviadasComponent } from './transferencias-enviadas/transferencias-enviadas.component';
 import { NuevaTransferenciaComponent } from './nueva-transferencia/nueva-transferencia.component';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
+import { TransferenciaCompletaComponent } from './transferencia-completa/transferencia-completa.component';
 
 const routes: Routes = [
   {
@@ -26,7 +27,15 @@ const routes: Routes = [
   {
     path:'mi-cuenta',
     component: MiCuentaComponent,
-  }
+  },
+  {
+    path:"transferencia-completa",
+    component: TransferenciaCompletaComponent,
+  },
+  {
+    path:"transferencia-completa/id",
+    component: TransferenciaCompletaComponent,
+  },
 ];
 
 @NgModule({

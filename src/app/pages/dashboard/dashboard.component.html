@@ -1,10 +1,15 @@
-
-<div>
-<article class="recibidas" routerLink="/pages/transferencias-recibidas">
-<app-transferencias-recibidas></app-transferencias-recibidas>
-</article>
-
-<article class="enviadas" routerLink="/pages/transferencias-enviadas">
-<app-transferencias-enviadas></app-transferencias-enviadas>
-</article>
-</div>
+<p *ngIf="cliente">Usuario: {{ cliente.usuario }} </p>
+<section *ngIf="cliente">
+    <div>
+        <article class="recibidas" routerLink="/pages/transferencias-recibidas">
+            <app-transferencias-recibidas></app-transferencias-recibidas>
+        </article>
+        <article class="enviadas" routerLink="/pages/transferencias-enviadas">
+            <app-transferencias-enviadas></app-transferencias-enviadas>
+        </article>
+    </div>
+    <article>
+        <h2 routerLink="/pages/nueva-transferencia">Nueva Transferencia</h2>
+    </article>
+</section>
+<p class="iniciarsesion" *ngIf="!cliente">Inicie Sesión para consultar sus datos</p>

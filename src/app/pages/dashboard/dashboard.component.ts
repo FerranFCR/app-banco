@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+  import { ClienteService } from 'src/app/services/cliente/cliente.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
+  cliente: any = null;
 
+  constructor(private clienteService: ClienteService){
+  
+  }
+  
+  ngOnInit(): void {
+  this.cliente = this.clienteService.leerSesion();
+  console.log("Logueado:" , this.cliente);
+  }
 }

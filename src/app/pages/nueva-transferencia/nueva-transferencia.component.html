@@ -1,9 +1,13 @@
+<section *ngIf="cliente">
 <div class="informacion">
     <label for="beneficiario">Beneficiario: </label><br>
-    <input id="text" type="text" [(ngModel)]="Beneficiario" placeholder="ID Beneficiario"> <br>
+    <input [(ngModel)]="nuevaTransferencia.clienteBeneficiario.id" id="text" type="text" placeholder="ID Beneficiario"> <br>
     <label for="importe">Importe: </label><br>
-    <input id="importe" type="number" [(ngModel)]="Importe" placeholder="Importe" /><br>
+    <input [(ngModel)]="nuevaTransferencia.importe" id="importe" type="number" placeholder="Importe" /><br>
     <label for="concepto">Concepto: </label><br>
-    <input id="concepto" type="text" [(ngModel)]="Concepto" placeholder="Concepto" /><br>
-    <button type="submit" class="btn-confirmar">Confirmar</button>
+    <input [(ngModel)]="nuevaTransferencia.concepto" id="concepto" type="text" placeholder="Concepto" /><br>
+    <button (click)="enviarTransferencia()" class="btn-confirmar">Confirmar</button>
+    <p>{{feedback}}</p>
 </div>
+</section>
+<p class="iniciarsesion" *ngIf="!cliente">Inicie Sesión para consultar sus datos</p>

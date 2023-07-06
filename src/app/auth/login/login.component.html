@@ -1,4 +1,5 @@
-<div class="container">
+<div *ngIf="!cliente">
+    <div class="container">
     <h2 class="title-page">Login screen</h2>
     <section class="form-login">
         <div class="credentials">
@@ -12,8 +13,8 @@
             </div>
         </div>
         <div class="credential-buttons">
-            <button (click)="validarlogin()" type="submit" class="btn"><a routerLink="/pages/dashboard">Iniciar Sesión</a></button>
-            <!-- <button type="reset" class="btn">Reset</button> -->
+            <button (click)="enviarLogin()" type="submit" class="btn">Iniciar Sesión</button>
         </div>
     </section>
+    </div>
 </div>
