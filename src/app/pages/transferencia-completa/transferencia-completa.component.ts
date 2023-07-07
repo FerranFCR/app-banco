@@ -13,8 +13,8 @@ export class TransferenciaCompletaComponent  implements OnInit
  {
   @Input() transferencias: any = transferenciasEnviadas || transferenciasRecibidas;
 
-  transferenciaId: string | undefined;
-  transferencia: any; // Asume que el tipo de la transferencia es "any" por simplicidad
+  //transferenciaId: string | undefined;
+  transferencia: any = null; // Asume que el tipo de la transferencia es "any" por simplicidad
 
   constructor(private transferenciaService: TransferenciaService, private route: ActivatedRoute) {}
 
@@ -30,11 +30,6 @@ export class TransferenciaCompletaComponent  implements OnInit
         this.transferencia = transferencia;
       })
     }
-    // this.route.params.subscribe((params: Params) => {
-    //   this.transferenciaId = params['id'];
-    //   this.transferencia = this.transferencias.find((t: { id: string | undefined; }) => t.id === this.transferenciaId);
-    }
-    // );
-
+   }
 }
 

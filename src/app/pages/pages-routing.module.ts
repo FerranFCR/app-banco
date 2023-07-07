@@ -6,11 +6,13 @@ import { TransferenciasEnviadasComponent } from './transferencias-enviadas/trans
 import { NuevaTransferenciaComponent } from './nueva-transferencia/nueva-transferencia.component';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 import { TransferenciaCompletaComponent } from './transferencia-completa/transferencia-completa.component';
+import { loginGuard } from '../guards/login.guard';
 
 const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
+    canActivate: [loginGuard]
   },
   {
     path: 'transferencias-recibidas',
@@ -19,22 +21,27 @@ const routes: Routes = [
   {
     path: 'transferencias-enviadas',
     component: TransferenciasEnviadasComponent,
+    canActivate: [loginGuard]
   },
   {
     path: 'nueva-transferencia',
     component: NuevaTransferenciaComponent,
+    canActivate: [loginGuard]
   },
   {
     path:'mi-cuenta',
     component: MiCuentaComponent,
+    canActivate: [loginGuard]
   },
+  // {
+  //   path:"transferencia-completa",
+  //   component: TransferenciaCompletaComponent,
+  //   canActivate: [loginGuard]
+  // },
   {
-    path:"transferencia-completa",
+    path:"transferencia-completa/:id",
     component: TransferenciaCompletaComponent,
-  },
-  {
-    path:"transferencia-completa/id",
-    component: TransferenciaCompletaComponent,
+    canActivate: [loginGuard]
   },
 ];
 
